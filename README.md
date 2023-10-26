@@ -10,7 +10,8 @@ Before running this script, there are a few things you should check and consider
 
 5.Template: If you're using an HTML template for your email, make sure the template file is correctly located and formatted.
 
-6.Server Configuration: Verify that the SMTP server ("smtp.mail.com") and port (587) are correct for your email provider. Some email providers may require additional settings.
+6.Server Configuration: Verify that the SMTP server ("smtp.mail.com") and port (587) are correct for your email provider. Some email providers may require additional settings. To send email from any email service, you will need to adjust the SMTP server settings, including the hostname and port, as well as the security settings (e.g., TLS or SSL). 1. Update the SMTP server and port for Gmail server = smtplib.SMTP("smtp.gmail.com", 587) server.starttls() 2. Update the SMTP server and port for Outlook/Hotmail server = smtplib.SMTP("smtp.live.com", 587) server.starttls().
 
-7.Dependencies: Ensure that you have the required Python libraries installed. You can use pip to install any missing libraries. In your case, you need to install 'pyfiglet' and 'tqdm' using the following commands: pip install pyfiglet
-                                     pip install tqdm
+7.Dependencies: Ensure that you have the required Python libraries installed. You can use pip to install any missing libraries. In your case, you need to install 'pyfiglet' and 'tqdm' using the following commands: pip install pyfiglet and pip install tqdm.
+ 
+                                    
